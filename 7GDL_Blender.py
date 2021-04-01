@@ -39,7 +39,7 @@ resp_7 = response[6]
 L1 = (3/5)*1.7
 L2 = 1.7-L1
 L3 = 1.4 
-#### Creating mesh bodies, onde cylinder for each whell and a cube for the chassi
+#### Creating mesh bodies, one cylinder for each wheel and a cube for the chassi
 op1 = bpy.ops.mesh.primitive_cylinder_add(radius= 0.25, depth=0.15, enter_editmode=False, align='CURSOR', location=(L1, L3/2, 0), rotation=(math.pi/2, 0, 0), scale=(1, 1, 1))
 op2 = bpy.ops.mesh.primitive_cylinder_add(radius= 0.25, depth=0.15, enter_editmode=False, align='CURSOR', location=(L1, -L3/2, 0), rotation=(math.pi/2, 0, 0), scale=(1, 1, 1))
 op3 = bpy.ops.mesh.primitive_cylinder_add(radius= 0.25, depth=0.15, enter_editmode=False, align='CURSOR', location=(-L2, -L3/2, 0), rotation=(math.pi/2, 0, 0), scale=(1, 1, 1))
